@@ -14,8 +14,8 @@ let valueInNumber = Number(score);
 let isLoggedIn = 1;
 
 let booleanLoggedIn = Boolean(isLoggedIn);
-console.log(typeof booleanLoggedIn);
-console.log(booleanLoggedIn);
+// console.log(typeof booleanLoggedIn);
+// console.log(booleanLoggedIn);
 
 
 //"" => false ; "sanjog" => true
@@ -23,5 +23,31 @@ console.log(booleanLoggedIn);
 let someNumber = 33;
 
 let stringNumber = String(someNumber);
-console.log(typeof stringNumber);
-console.log(stringNumber);
+// console.log(typeof stringNumber);
+// console.log(stringNumber);
+
+/************************Operations*******************/
+
+let value = 1;
+let negVal = -value;
+console.log(negVal);
+
+// console.log(2+2);
+// console.log(2-2);
+// console.log(2*2);
+// console.log(2**2);
+// console.log(2%2);
+// console.log(2/2);
+
+console.log("1" + 2); //12
+console.log(1 + "2"); //12 
+console.log("1" + 2 + 2); //122
+console.log(1 + 2 + "2"); //32
+
+console.log(+true);
+console.log(+"");
+
+let gameCounter = 100;
+gameCounter++;
+console.log(gameCounter);
+
