@@ -12,6 +12,7 @@ let age = 18;
 let isLoggedIn = false;
 let state = null;
 
+//primitive data types
 //data types
 //number
 //BigInt
@@ -25,6 +26,7 @@ let state = null;
 //objecct
 console.log(typeof(null)); // object
 console.log(typeof(undefined)); // undefined
+
 
 
 
