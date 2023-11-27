@@ -46,7 +46,7 @@ console.log(1 + 2 + "2"); //32
 
 console.log(+true);
 console.log(+"");
-
+ 
 let gameCounter = 100;
 gameCounter++;
 console.log(gameCounter);
