@@ -4,22 +4,75 @@
 <head>
     <meta charset="UTF-8">
     <title>DOM learning</title>
-
     <style>
         .bg-black {
-            background-color: black;
-            color: aliceblue;
+            background-color: #212121;
+            color: #fff;
         }
     </style>
 </head>
 
-<body class="bg_black">
+<body class="bg-black">
     <div>
-        <h1 id="title" class="heading">DOM learning on chai aur code</h1>
-        <p>
-            Lorem ipsum dolor sit amet
-        </p>
+        <h1 id="title" class="heading">DOM learning on chai aur code
+            <span style="display: none">test text</span>
+        </h1>
+        <h2>Lorem ipsum dolor sit amet</h2>
+        <h2>Lorem ipsum dolor sit amet</h2>
+        <h2>Lorem ipsum dolor sit amet</h2>
+        <p>Lorem ipsum dolor sit amet</p>
+        <input type="password">
+
+        <ul>
+            <li class="list-item">one</li>
+            <li class="list-item">two</li>
+            <li class="list-item">three</li>
+            <li class="list-item">four</li>
+        </ul>
     </div>
 </body>
+
+
+<!--
+    THE DIFFERENCE BETWEEN INNERTEXT AND TEXTCONTENT AND INNERHTML
+    
+    innerText will show you only the visible text
+
+    textContent will show you all the content
+
+    innerHtml will show you the html tag if you have written in it
+-->
+
+<!-- 
+    what are query selectors these are just the html tags we want the whole html tag with it 
+    all attributes and like classes and id
+
+    and querySelector and querySelectorAll 
+
+    querySelector - will show you the first html tag
+
+    querySelectorAll - will give you all the tags that you have selected
+
+-->
+
+<!-- 
+   getElementById - will give you by id
+
+   getElementByClass- will give you by class
+
+   getElementByClassName - will give you by class name
+   and it gives HTMLCollection in return
+
+-->
+
+<!--
+    1.innerHTML: returns all html nodes 
+    2.textContent : returns all text content
+    3.innerText : gives the text in the selected node
+    4.querySelector
+    5.querySelectorAll
+    6.getAttribute
+    7.setAttribute
+-->
 
 </html>
