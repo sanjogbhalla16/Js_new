@@ -75,4 +75,19 @@
     7.setAttribute
 -->
 
+<!--
+    The main difference between an HTMLCollection and a NodeList is that one is live and one is static.
+    This means that when an element is appended to the DOM,
+    a live node will recognize the new element while a static node will not.
+
+    The element methods getElementsByClassName() and getElementsByTagName() return a live HTMLCollection.
+    It only includes the matching elements 
+    (e.g. class name or tag name) and does not include text nodes, it provides only two methods item and namedItem.
+
+    NodeLists have a defined forEach method as well as a few other methods including item, entries, keys, and values.
+    NodeLists behave differently depending on how you access them; if you access elements using childNodes, 
+    the returned list is live and will update as more elements are added to the node. If it’s accessed using querySelectorAll(), 
+    the returned list is static and will not update if more elements are added to the node.
+-->
+
 </html>
