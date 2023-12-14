@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Js Async</title>
+  </head>
+  <body style="background-color: #414141; color: aliceblue">
+    <h1>Chai aur Code</h1>
+    <button id="stop">Stop</button>
+  </body>
+  <script>
+    // handler = function or a call-back function with no name
+    //setTimeout means wait for this much time and then I'll do the work in the function for just one time
+
+    // setTimeout(function () {
+    //   console.log("bhalla_16");
+    // }, 2000);
+
+    //syntax like this can also be used
+    const sayHitesh = function () {
+      console.log("bhalla_16");
+    };
+    // setTimeout(sayHitesh, 2000); //we will give reference to the function
+    const changeText = function () {
+      document.querySelector("h1").innerHTML = "best JS series by hitesh";
+    };
+    const changeMe = setTimeout(changeText, 2000);
+
+    document.querySelector("#stop").addEventListener("click", function () {
+      clearTimeout(changeMe);
+      console.log("STOPPED");
+    });
+  </script>
+</html>
